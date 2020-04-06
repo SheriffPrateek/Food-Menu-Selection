@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Selection</title>
+	<script type="text/javascript">
+         function Show() {
+         	var s=0;
+           var ar=new Array();
+        	var v1=document.getElementById("MP1");
+         var v2=document.getElementById("MP2");
+             if(v1.checked==true)
+             {
+               var s1="Half Matar Pulav";
+               s+=parseInt(v1.value);
+             }      	         
+             else if(v2.checked==true)
+             {
+             	 var s1="Full Matar Pulav";
+             	 s+=parseInt(v2.value);
+             }
+
+            var v3=document.getElementById("DM1");
+         	var v4=document.getElementById("DM2");
+         	       if(v3.checked==true)
+             {
+                var s2="Half Dal Makhini";
+                s+=parseInt(v3.value);
+             }      	         
+             else if(v4.checked==true)
+             {
+             	var s2="Full Dal Makhini";
+             	s+=parseInt(v4.value);
+             }
+           	var v5=document.getElementById("FR1");
+           	var v6=document.getElementById("FR2");
+           	         if(v5.checked==true)
+             {
+                var s3="Half Fried Rice";
+              s+=parseInt(v5.value);
+             }      	         
+             else if(v6.checked==true)
+             {
+             	var s3="Full Fried Rice";
+             	    s+=parseInt(v6.value);
+             }
+           	var v7=document.getElementById("CB1");
+           	var v8=document.getElementById("CB2");
+                       if(v7.checked==true)
+             {
+               var  s4="Half Chole Bhature";
+                 s+=parseInt(v7.value);
+             }      	         
+             else if(v8.checked==true)
+             {
+             	var s4="Full Chole Bhature";
+             	s+=parseInt(v8.value);
+             }    
+             
+             alert("You have selected following items"+"\n"+s1+"\n"+s2+"\n"+s3+"\n"+s4+"\n"+"Total amount you have to pay is:"+" "+s);
+       
+
+}
+
+
+             
+	</script>
+</head>
+<body>
+
+ 	<b><i><h1 style="color:red;">Food Menu<h1></i></b>
+
+	<ul fontsize="12">
+
+	<font size="5">	<li style="color:mediumblue; ">Matar Pulav</li></font>		
+		<input id="MP1" type="radio" name="Matar Pulav" value="200" >
+		 <font size="4">Half at Rs 200</font>
+		<br>
+        <input id="MP2" type="radio" name="Matar Pulav" value="350">
+        <font size="4"> Full at Rs 350</font>
+       <br>
+        <font size="5"><li style="color:mediumblue; ">Dal Makhini</li></font>
+        <input id="DM1" type="radio" name="Dal Makhini" value="150" >
+		 <font size="4">Half at Rs 150</font>
+		<br>
+        <input id="DM2" type="radio" name="Dal Makhini" value="200">
+         <font size="4">Full at Rs 200</font>
+         <br>
+     
+	<font size="5">	<li style="color:mediumblue; ">Fried Rice</li></font>		
+         <input id="FR1" type="radio" name="Fried Rice" value="80" >
+		 <font size="4">Half at Rs 80</font>
+		<br>
+        <input id="FR2" type="radio" name="Fried Rice" value="130">
+        <font size="4"> Full at Rs 130</font>
+          <br>
+
+          <font size="5">	<li style="color:mediumblue; ">Chole Bhature</li></font>		
+         <input id="CB1" type="radio" name="Chole Bhature" value="75" >
+		 <font size="4">Half at Rs 75</font>
+		<br>
+        <input id="CB2" type="radio" name="Chole Bhature" value="100">
+        <font size="4"> Full at Rs 100</font>
+          <br>
+          <input style="background-color:lightblue; " type="Submit" onclick="Show()" value="Submit">
+          
+        </ul>
+        
+      
+</body>
+</html>
